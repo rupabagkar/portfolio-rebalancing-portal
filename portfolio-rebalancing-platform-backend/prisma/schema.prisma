@@ -1,0 +1,35 @@
+// Prisma Schema - Auto-generated from API contracts
+// Generated: 2026-06-14T11:33:24.996Z
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email  String @unique
+  password  String
+  token  String
+  user  Json
+  name  String
+  success  Boolean @default(true)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  
+  @@map("users")
+}
+
+model Dashboard {
+  id        String   @id @default(uuid())
+  stats  Json
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  
+  @@map("dashboards")
+}
+
