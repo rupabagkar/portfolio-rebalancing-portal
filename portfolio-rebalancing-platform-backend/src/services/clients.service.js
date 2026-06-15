@@ -7,6 +7,7 @@ export const clientsService = {
         ticker: 'SARAH-T',
         value: 500000,
         portfolioDrift: 2.3,
+        timeHorizonYears: 15,
         lastReview: '2025-03-15',
         riskProfile: 'Moderate',
         status: 'Active'
@@ -17,6 +18,7 @@ export const clientsService = {
         ticker: 'MICHAEL-C',
         value: 750000,
         portfolioDrift: -1.5,
+        timeHorizonYears: 25,
         lastReview: '2025-04-20',
         riskProfile: 'Aggressive',
         status: 'Active'
@@ -27,6 +29,7 @@ export const clientsService = {
         ticker: 'JENNIFER-W',
         value: 350000,
         portfolioDrift: 5.1,
+        timeHorizonYears: 8,
         lastReview: '2025-03-28',
         riskProfile: 'Conservative',
         status: 'Active'
@@ -37,6 +40,7 @@ export const clientsService = {
         ticker: 'ROBERT-M',
         value: 620000,
         portfolioDrift: 3.8,
+        timeHorizonYears: 20,
         lastReview: '2025-04-10',
         riskProfile: 'Moderate',
         status: 'Active'
