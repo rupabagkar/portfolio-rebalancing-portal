@@ -854,7 +854,6 @@ API version is included in the URL path (/api/v1/). Breaking changes will increm
                         "ticker": { "type": "string", "example": "SARAH-T" },
                         "value": { "type": "number", "example": 500000 },
                         "portfolioDrift": { "type": "number", "example": 2.3 },
-                        "timeHorizonYears": { "type": "integer", "example": 15 },
                         "lastReview": { "type": "string", "format": "date", "example": "2025-03-15" },
                         "riskProfile": { "type": "string", "example": "Moderate" },
                         "status": { "type": "string", "example": "Active" }
